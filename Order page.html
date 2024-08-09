@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grocies</title>
+        <link rel="shortcut icon" href="Images/G letter.jpeg"/>
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navdiv">
+                    <div class="logo"><a href="#">Grocies</a></div>
+                    <ul class="ul">
+                        <li>
+                            <div class="search-form">
+                                <div><input type="text" placeholder="Search..."></div>
+                                <div><button type="submit"><i class="fas fa-search"></i></button></div>
+                            </div>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About us page.html">About us </a></li>
+                        <li><a href="Dairy Product Page.html">Dairy</a></li>
+                        <li><a href="Vegetables page.html">Vegetables</a></li>
+                        <li><a href="Cosmetics and Skin care product Page .html">Cosmetics</a></li>
+                        <li><a href="Order page.html" class="fas fa-shopping-cart"></a></li>
+                        <li><a href="Loyalty page.html" class="fa-solid fa-user"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="category-section" id="fruits-section">
+                <h2>Fruits</h2>
+                <div class="form-group">
+                    <label for="fruits-product">Product:</label>
+                    <select id="fruits-product"></select>
+                </div>
+                <div class="form-group">
+                    <label for="fruits-weight">Weight:</label>
+                    <select id="fruits-weight">
+                        <option value="1kg">1kg</option>
+                        <option value="500g">500g</option>
+                        <option value="250g">250g</option>
+    
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fruits-quantity">Quantity:</label>
+                    <select id="fruits-quantity"></select>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="addItemToCart('fruits')">Add to Cart</button>
+                </div>
+            </section>
+            <section class="category-section" id="vegetables-section">
+                <h2>Vegetables</h2>
+                <div class="form-group">
+                    <label for="vegetables-product">Product:</label>
+                    <select id="vegetables-product"></select>
+                </div>
+                <div class="form-group">
+                    <label for="vegetables-weight">Weight:</label>
+                    <select id="vegetables-weight">
+                        <option value="1kg">1kg</option>
+                        <option value="500g">500g</option>
+                        <option value="250g">250g</option>
+    
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="vegetables-quantity">Quantity:</label>
+                    <select id="vegetables-quantity"></select>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="addItemToCart('vegetables')">Add to Cart</button>
+                </div>
+            </section>
+            <section class="category-section" id="meat-section">
+                <h2>Meat and Seafood</h2>
+                <div class="form-group">
+                    <label for="meat-product">Product:</label>
+                    <select id="meat-product"></select>
+                </div>
+                <div class="form-group">
+                    <label for="meat-weight">Weight:</label>
+                    <select id="meat-weight">
+                        <option value="1kg">1kg</option>
+                        <option value="500g">500g</option>
+                        <option value="250g">250g</option>
+    
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="meat-quantity">Quantity:</label>
+                    <select id="meat-quantity"></select>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="addItemToCart('meat')">Add to Cart</button>
+                </div>
+            </section>
+            <section class="category-section" id="dairy-section">
+                <h2>Dairy Produce</h2>
+                <div class="form-group">
+                    <label for="dairy-product">Product:</label>
+                    <select id="dairy-product"></select>
+                </div>
+                <div class="form-group">
+                    <label for="dairy-weight">Weight:</label>
+                    <select id="dairy-weight"disabled>
+                        <option value="1kg">1kg</option>
+                        <option value="500g">500g</option>
+                        <option value="250g">250g</option>
+    
+                    </select>
+                </div>
+                
+
+                <div class="form-group">
+                    <label for="dairy-quantity">Quantity:</label>
+                    <select id="dairy-quantity"></select>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="addItemToCart('dairy')">Add to Cart</button>
+                </div>
+                
+            </section>
+            <section class="category-section" id="baking-section">
+                <h2>Baking and Cooking Ingredients</h2>
+                <div class="form-group">
+                    <label for="baking-product">Product:</label>
+                    <select id="baking-product"></select>
+                </div>
+                <div class="form-group">
+                    <label for="baking-weight">Weight:</label>
+                    <select id="baking-weight"disabled>
+                        <option value="1kg">1kg</option>
+                        <option value="500g">500g</option>
+                        <option value="250g">250g</option>
+    
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="baking-quantity">Quantity:</label>
+                    <select id="baking-quantity"></select>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="addItemToCart('baking')">Add to Cart</button>
+                </div>
+            </section>
+            <section>
+                <h2 id="carth2">Cart</h2>
+                <table id="cartTable">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Weight</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Cart items -->
+                   </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Total Price:</td>
+                            <td id="totalPrice">Rs.0</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="form-group">
+                    <button class="addto" type="button" onclick="addToFavorites('fruits','vegetables', 'meat','dairy', 'baking')">Add to Favorites</button>
+                    <button class="addto" type="button" onclick="applyFavorites()">Apply Favorites</button>
+                    <a href="Checkout.html"><button class="BuyNow">Buy Now</button></a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Contact us at <a href="tel:+1234567890">123-456-7890</a> or <a href="mailto:info@supermart.com">info@grocies.com</a></p>
+            <a href="https://www.facebook.com/grocies"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/grocies"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/grocies"><i class="fa-brands fa-instagram"></i></a>
+        </footer>
+        <script src="Order .js"></script>
+    </body>
+ </html> 
+
+

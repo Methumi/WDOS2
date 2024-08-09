@@ -1,0 +1,41 @@
+{
+    "fruits": [
+        { "name": "Apple", "weight": "1Kg", "price": 2020 },
+        { "name": "Banana", "weight": "1Kg", "price": 270 },
+        { "name": "Orange", "weight": "1Kg", "price": 1830 },
+        { "name": "Papaya", "weight": "1Kg", "price": 170 },
+        { "name": "Grapes", "weight": "1Kg", "price": 5250 },
+        { "name": "Watermelon", "weight": "1Kg", "price": 320 }
+    ],
+    "vegetables": [
+        { "name": "Pumkin", "weight": "200g", "price": 350 },
+        { "name": "Broccoli", "weight": "100g", "price": 200 },
+        { "name": "Beetroot", "weight": "250g", "price": 345 },
+        { "name": "Potato", "weight": "1kg", "price": 550 },
+        { "name": "Tomato", "weight": "100g", "price": 190 },
+        { "name": "Cucumber", "weight": "250g", "price": 170 }
+    ],
+    "dairy": [
+        { "name": "Milk", "weight": "1L", "price": 600 },
+        { "name": "Cheese", "weight": "200g", "price": 1250 },
+        { "name": "Yogurt", "weight": "80ml", "price": 80 },
+        { "name": "Butter", "weight": "100g", "price": 675 },
+        { "name": "Whipped Cream", "weight": "250g", "price": 1950 },
+        { "name": "Ice cream", "weight": "1L", "price": 1350 }
+    ],
+    "meat": [
+        { "name": "Chicken", "weight": "1kg", "price": 1980 },
+        { "name": "Beef", "weight": "1kg", "price": 3450 },
+        { "name": "Fish", "weight": "1kg", "price": 2200 },
+        { "name": "Prawns", "weight": "1kg", "price": 1450 }
+    ],
+    "baking": [
+        { "name": "Flour", "weight": "1kg", "price": 1250 },
+        { "name": "Sugar", "weight": "1kg", "price": 850 },
+        { "name": "Baking Powder", "weight": "200g", "price": 320 },
+        { "name": "Yeast", "weight": "100g", "price": 150 },
+        { "name": "Chocolate Chips", "weight": "100g", "price": 540 },
+        { "name": "Tea", "weight": "100g", "price": 620 }
+    ]
+}
+

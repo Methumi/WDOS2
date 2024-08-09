@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocies</title>
+    <!----titile icon---------------------->
+    <link rel="shortcut icon" href="Images/G letter.jpeg"/>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <!-----font (poppins)------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!----icons(hear/cart)----------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+</head>
+<body>
+    <header>
+    <!-----Navigation----------------------->
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Grocies</a></div>
+            <ul class="ul">
+                <!---Search box--------->
+                <li>
+                    <div class="search-form">
+                        <div><input type="text" placeholder="Search..."></div>
+                        <div><button type="submit"><i class="fas fa-search"></i></button></div>
+                    </div>
+                </li>
+                <!----menu-------------------------->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About us page.html">About us </a></li>
+                <li><a href="Dairy Product Page.html">Dairy</a></li>
+                <li><a href="Vegetables page.html">Vegetables</a></li>
+                <li><a href="Cosmetics and Skin care product Page .html">Cosmetics</a></li>
+                <!------cart (order page)------------------------->
+                <li><a href="Order page.html" class="fas fa-shopping-cart"></a></li>
+                <!------user (Loyalty page)----------------------->
+                <li><a href="Loyalty page.html" class="fa-solid fa-user"></a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <!----Main content ------------------------------------------------->
+    <h2 class="OnC"></h2>
+            
+            <table id="orderSummaryTable">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Weight</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Order items will be inserted here -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Total Price:</td>
+                        <td id="totalPrice">Rs.0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button class="goBack" onclick="goBack()">Go Back</button>
+    <main>
+        <section>
+            <h2 class="orderh2">Order</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address"> Delivery Address:</label>
+                    <input type="text" id="email" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Payment method</label>
+                    <select id="method" name="method" required><option value="">Select a method</option>
+                        <option value="cash">Cash</option>
+                        <option value="card">Card</option>
+                    </select>
+                </div>
+                <button id="payButton">Pay</button>
+            </form>
+        </section>
+    </main>
+
+     <!-- Footer section goes here -->
+     <footer>
+        <p>Contact us at <a href="tel:+1234567890">123-456-7890</a> or <a href="mailto:info@supermart.com">info@grocies.com</a></p>
+        <a href="https://www.facebook.com/grocies"><i class="fa-brands fa-facebook"></i></a> <a href="https://twitter.com/grocies"><i class="fa-brands fa-twitter"></i></a><a href="https://www.instagram.com/grocies"><i class="fa-brands fa-instagram"></i></a>
+    </footer> 
+    <script src="checkout.js"></script>
+
+</body>
+</html>

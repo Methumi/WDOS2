@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocies</title>
+    <!----titile icon---------------------->
+    <link rel="shortcut icon" href="Images/G letter.jpeg"/>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <!-----font (poppins)------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!----icons(hear/cart)----------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+</head>
+<body>
+    <header>
+    <!-----Navigation----------------------->
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Grocies</a></div>
+            <ul class="ul">
+                <!---Search box--------->
+                <li>
+                    <div class="search-form">
+                        <div><input type="text" placeholder="Search..."></div>
+                        <div><button type="submit"><i class="fas fa-search"></i></button></div>
+                    </div>
+                </li>
+                <!----menu-------------------------->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About us page.html">About us </a></li>
+                <li><a href="Dairy Product Page.html">Dairy</a></li>
+                <li><a href="Vegetables page.html">Vegetables</a></li>
+                <li><a href="Cosmetics and Skin care product Page .html">Cosmetics</a></li>
+                <!------cart (order page)------------------------->
+                <li><a href="Order page.html" class="fas fa-shopping-cart"></a></li>
+                <!------user (Loyalty page)----------------------->
+                <li><a href="Loyalty page.html" class="fa-solid fa-user"></a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <!----Main content ------------------------------------------------->
+    <main>
+        <section>
+            <h2 class="Loyalty">Loyalty Registration</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="loyalty">Loyalty Scheme:</label>
+                    <select id="loyalty" name="loyalty" required>
+                        <option value="">Select a loyalty scheme</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                        <option value="platinum">Platinum</option>
+                    </select>
+                </div>
+                <div class="loyalty-benefits">
+                    <h3>Loyalty Scheme Benefits:</h3>
+                    <ul>
+                        <li><strong>Silver:</strong> 5% discount on all purchases</li><br>
+                        <li><strong>Gold:</strong> 10% discount on all purchases and exclusive access to special offers</li><br>
+                        <li><strong>Platinum:</strong> 15% discount on all purchases, exclusive access to special offers, and free shipping</li>
+                    </ul>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+     <!-- Footer section goes here -->
+     <footer>
+        <p>Contact us at <a href="tel:+1234567890">123-456-7890</a> or <a href="mailto:info@supermart.com">info@grocies.com</a></p>
+        <a href="https://www.facebook.com/grocies"><i class="fa-brands fa-facebook"></i></a> <a href="https://twitter.com/grocies"><i class="fa-brands fa-twitter"></i></a><a href="https://www.instagram.com/grocies"><i class="fa-brands fa-instagram"></i></a>
+    </footer>
+</body>
+</html>
